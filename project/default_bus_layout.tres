@@ -1,0 +1,39 @@
+[gd_resource type="AudioBusLayout" load_steps=5 format=2]
+
+[sub_resource type="AudioEffectEQ" id=2]
+resource_name = "EQ"
+band_db/32_hz = 15.1
+band_db/100_hz = -24.6
+band_db/320_hz = 3.0
+band_db/1000_hz = -3.2
+band_db/3200_hz = 5.4
+band_db/10000_hz = 14.1
+
+[sub_resource type="AudioEffectPitchShift" id=3]
+resource_name = "PitchShift"
+pitch_scale = 0.55
+oversampling = 5
+
+[sub_resource type="AudioEffectPanner" id=4]
+resource_name = "Panner"
+
+[sub_resource type="AudioEffectStereoEnhance" id=5]
+resource_name = "StereoEnhance"
+pan_pullout = 2.0
+surround = 0.2
+
+[resource]
+bus/1/name = "Rain"
+bus/1/solo = false
+bus/1/mute = false
+bus/1/bypass_fx = false
+bus/1/volume_db = -1.71701
+bus/1/send = ""
+bus/1/effect/0/effect = SubResource( 2 )
+bus/1/effect/0/enabled = true
+bus/1/effect/1/effect = SubResource( 3 )
+bus/1/effect/1/enabled = true
+bus/1/effect/2/effect = SubResource( 4 )
+bus/1/effect/2/enabled = true
+bus/1/effect/3/effect = SubResource( 5 )
+bus/1/effect/3/enabled = true
