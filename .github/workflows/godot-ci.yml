@@ -6,7 +6,7 @@ on:
 
 env:
   GODOT_VERSION: 3.5
-  EXPORT_NAME: godot_test_framework
+  EXPORT_NAME: 58thGodotWildJam
   PROJECT_PATH: project/
 
 jobs:
